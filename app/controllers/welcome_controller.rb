@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
+  def new
+  end
+
   def index
-    render :inline => "Welcome Page!"
   end
 end
