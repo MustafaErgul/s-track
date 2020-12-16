@@ -1,7 +1,6 @@
 class Stock < ApplicationRecord
 
 ### Get data from the external API provider.
-
   def self.get_stock_info(symbol)
     headers = {"Content-Type" => "application/json", "Authorization" => "Token #{Rails.application.credentials.tiingo_client[:dev_api_key]}" }
 

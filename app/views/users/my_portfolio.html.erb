@@ -15,3 +15,10 @@
     </div>
   <% end %>
 </div>
+
+<div class="card card-header results-block">
+  <% if @stock %>
+    <strong>Stock:</strong> <%= @stock["ticker"] %>
+    <strong>Last Price:</strong> <%= @stock["last"] %>
+  <% end %>
+</div>
