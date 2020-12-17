@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :user_stocks
   get 'welcome/new'
   get 'welcome/index'
   devise_for :users
