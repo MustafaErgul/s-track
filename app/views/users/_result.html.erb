@@ -2,10 +2,11 @@
   <%= render 'layouts/messages' %>
 </div>
 
-
-<div class="card card-header results-block">
-  <% if @stock %>
-    <strong>Stock:</strong> <%= @stock["ticker"] %>
-    <strong>Last Price:</strong> <%= @stock["last"] %>
-  <% end %>
-</div>
+<% if @stock %>
+  <div class="card card-header results-block">
+    <strong>Stock:</strong>
+    <%= @stock["ticker"] %>
+    <strong>Last Price:</strong>
+    <%= @stock["last"] %>
+  </div>
+<% end %>
