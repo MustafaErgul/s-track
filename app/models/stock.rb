@@ -33,8 +33,8 @@ class Stock < ApplicationRecord
   end
 ############################################
 
-  def self.check_db(ticker_symbol)
-    where(ticker: ticker_symbol).first
+  def self.check_db(ticker)
+    where(ticker: ticker).first
   end
 
 end
