@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :user_stocks
+  resources :user_stocks, only: [:create]
   get 'welcome/new'
   get 'welcome/index'
   devise_for :users
