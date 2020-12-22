@@ -11,16 +11,18 @@ class Stock < ApplicationRecord
     uri = URI("https://api.tiingo.com/iex/?tickers=" + symbol)
     req = Net::HTTP::Get.new(uri)
 
+    headers.each { |key, value| req[key.to_s] = value}
+
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+
+    res = http.request(req)
+    response = JSON.parse(res.body)
+
+    response.first
+
     begin
-      headers.each { |key, value| req[key.to_s] = value}
-
-      http = Net::HTTP.new(uri.host, uri.port)
-      http.use_ssl = true
-
-      res = http.request(req)
-      response = JSON.parse(res.body)
-
-      response.first
+      new(ticker: symbol, last_price: response.first["last"])
     rescue => exception
       return nil
     end
