@@ -2,7 +2,7 @@ class Stock < ApplicationRecord
   has_many :user_stocks, :dependent => :destroy
   has_many :users, through: :user_stocks
 
-  validates :name, :ticker, presence: true
+  validates :ticker, presence: true
 
 ### Get data from the external API provider.
   def self.get_stock_info(symbol)
