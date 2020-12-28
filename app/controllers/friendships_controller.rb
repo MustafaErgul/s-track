@@ -1,6 +1,14 @@
 class FriendshipsController < ApplicationController
-  def create
 
+  def create
+    friend = User.find(params[:friend])
+    current_user.friendships.build(friend_id: friend.id)
+    if current_user.save
+      flash[:notice] = "Following user"
+    else
+      flash[:alert] = "There was something wrong!"
+    end
+    redirect_to my_friends_path
   end
 
   def destroy
@@ -9,4 +17,5 @@ class FriendshipsController < ApplicationController
     flash[:notice] = "#{friendship} was removed from your following list"
     redirect_to my_friends_path
   end
+
 end
