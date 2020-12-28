@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem "font-awesome-rails"
+# Move db data from dev to prod
+gem 'yaml_db'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
