@@ -1,0 +1,159 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2020-12-15 14:27:16.180206'
+    - '2020-12-15 14:27:16.180206'
+
+---
+friendships:
+  columns:
+  - id
+  - user_id
+  - friend_id
+  - created_at
+  - updated_at
+  records: 
+  - - 7
+    - 1
+    - 4
+    - '2020-12-28 18:47:58.299235'
+    - '2020-12-28 18:47:58.299235'
+
+---
+stocks:
+  columns:
+  - id
+  - ticker
+  - name
+  - last_price
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - TSLA
+    - tesla
+    - 9999
+    - '2020-12-15 18:51:02.236943'
+    - '2020-12-17 17:49:28.403485'
+  - - 3
+    - TSLA
+    - tesla_copy
+    -
+    - '2020-12-17 17:47:13.872489'
+    - '2020-12-17 18:18:35.623119'
+  - - 5
+    - MSFT
+    -
+    - 222.59
+    - '2020-12-22 10:37:39.908650'
+    - '2020-12-22 10:37:39.908650'
+  - - 6
+    - NFLX
+    -
+    - 528.91
+    - '2020-12-22 10:39:11.459357'
+    - '2020-12-22 10:39:11.459357'
+  - - 7
+    - googl
+    - test
+    - 1725.84
+    - '2020-12-23 14:08:04.620290'
+    - '2020-12-23 14:08:04.620290'
+
+---
+user_stocks:
+  columns:
+  - id
+  - user_id
+  - stock_id
+  - created_at
+  - updated_at
+  records: 
+  - - 7
+    - 3
+    - 3
+    - '2020-12-17 18:23:10.073719'
+    - '2020-12-17 18:23:10.073719'
+  - - 13
+    - 1
+    - 6
+    - '2020-12-22 10:39:11.465164'
+    - '2020-12-22 10:39:11.465164'
+  - - 17
+    - 1
+    - 1
+    - '2020-12-28 19:18:13.974930'
+    - '2020-12-28 19:18:13.974930'
+  - - 18
+    - 2
+    - 5
+    - '2020-12-28 19:37:12.498893'
+    - '2020-12-28 19:37:12.498893'
+  - - 19
+    - 1
+    - 5
+    - '2020-12-28 19:37:24.314555'
+    - '2020-12-28 19:37:24.314555'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - created_at
+  - updated_at
+  - first_name
+  - last_name
+  records: 
+  - - 1
+    - 2@gmail.com
+    - "$2a$12$5aXAq7C/ESOjUggtNS8UnOL.pXvWOIwAG0lAcMAPAdCm6MCTecAwq"
+    -
+    -
+    -
+    - '2020-12-15 14:33:41.207017'
+    - '2020-12-25 08:53:07.097711'
+    - Mustafa
+    - Ergül
+  - - 2
+    - asdmq@gmasl.c
+    - "$2a$12$fqUJypmaAGkM07F9Jbrpke3Hd/6iYISHgaQsgCy0x/7iqoZKQkaqu"
+    -
+    -
+    -
+    - '2020-12-17 17:44:42.870957'
+    - '2020-12-25 08:52:28.238568'
+    - hüseyin
+    - kamil
+  - - 3
+    - qkmqwe@gfma.com
+    - "$2a$12$WZq6J6AlPsbK0sietXLCJuhjtcZdRYSQHuAqmoBlntcG.5rUsqqUm"
+    -
+    -
+    -
+    - '2020-12-17 17:44:54.813877'
+    - '2020-12-25 08:51:12.866971'
+    - ali
+    - bekir
+  - - 4
+    - qlweq@ksdkmef.com
+    - "$2a$12$6oss0g8U03LiWdReU1ZWvesWWkPlKWPH2zggi4OWlxMb9iV96v9HC"
+    -
+    -
+    -
+    - '2020-12-23 15:49:37.196251'
+    - '2020-12-25 08:53:34.852482'
+    - bulut
+    - buluthan
