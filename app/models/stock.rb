@@ -31,7 +31,7 @@ class Stock < ApplicationRecord
 
   def self.get_stock_price(symbol)
     info = get_stock_info(symbol)
-    info["last"]
+    info.last_price
   end
 ############################################
 

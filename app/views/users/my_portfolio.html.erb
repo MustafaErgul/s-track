@@ -1,5 +1,7 @@
 <h1>MY Portfolio Page</h1>
 
+<%= link_to 'Refresh rates', refresh_path , class:'btn btn-sm btn-info' %>
+
 <div class="search-area">
   <h3>Search</h3>
   <%= form_tag search_stock_path, remote: true, method: :get do %>

@@ -19,4 +19,9 @@ class UserStocksController < ApplicationController
     redirect_to my_portfolio_path
   end
 
+  def refresh_stock_rates
+    #stocks = current_user.stocks
+    #render template: "stocks/_list"
+    redirect_to my_portfolio_path
+  end
 end

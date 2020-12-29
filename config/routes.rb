@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get 'search_friend', to: 'users#search'
   resources :users, only: [:show]
 
+  get 'refresh', to: 'user_stocks#refresh_stock_rates'
+
 end
